@@ -3,19 +3,26 @@ import React, { Component } from 'react'
 import '../styles/dist/App.css'
 import FormLayout from './FormLayout'
 import Text from './Text'
+import Heading from './Heading'
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <React.StrictMode>
-          <div class="slds-grid slds-wrap">
-            <div class="slds-col">
+          <Heading value="React Mjolnir" />
+          <div className="site-text-heading--label slds-m-top--none">
+            Salesforce Lightning Design System implemented in React
+          </div>
+
+          <div className="slds-grid slds-wrap">
+          
+            <div className="slds-col slds-size_1-of-2">
               <span>
                 <Text value="Hello"/>
               </span>
             </div>
-            <div class="slds-col">
+            <div className="slds-col slds-size_1-of-2">
               <FormLayout />
             </div>
             
