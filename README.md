@@ -1,6 +1,10 @@
 # React Mjolnir
 [Salesforce Lightning Design System components](https://www.lightningdesignsystem.com/) implemented in React
 
+### Get started
+```
+yarn run storybook
+```
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
