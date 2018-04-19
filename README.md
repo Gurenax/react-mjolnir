@@ -5,6 +5,12 @@
 ```
 yarn run storybook
 ```
+
+### Change log
+- Added `Heading`, `Text` components
+- Added `FormLayout` component
+- Added Added `AbsoluteCenter` component
+
 ---
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
