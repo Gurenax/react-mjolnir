@@ -10,22 +10,13 @@ class App extends Component {
     return (
       <div className="App">
         <React.StrictMode>
-          <Heading value="React Mjolnir" />
-          <div className="site-text-heading--label slds-m-top--none">
-            Salesforce Lightning Design System implemented in React
+          <div class="slds-align_absolute-center" style={{'height':'5rem'}}>
+            <Heading value="React Mjolnir" />
           </div>
-
-          <div className="slds-grid slds-wrap">
-          
-            <div className="slds-col slds-size_1-of-2">
-              <span>
-                <Text value="Hello"/>
-              </span>
+          <div class="slds-align_absolute-center" style={{'height':'5rem'}}>
+            <div className="site-text-heading_label slds-m-top_none">
+              Run Storybook <span className="color-background-highlight">yarn run storybook</span>
             </div>
-            <div className="slds-col slds-size_1-of-2">
-              <FormLayout />
-            </div>
-            
           </div>
         </React.StrictMode>
       </div>
