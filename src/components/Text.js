@@ -1,10 +1,13 @@
 import React from 'react'
 
 const Text = ({
-  value
+  children,
+  type,
+  size
 }) => {
+  const className = 'slds-' + type + '-' + size
   return (
-    <div className="slds-text-body_regular">{ value }</div>
+    <div className={className}>{ children }</div>
   )
 }
 export default Text
