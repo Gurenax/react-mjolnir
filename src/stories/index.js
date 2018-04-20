@@ -9,7 +9,6 @@ import { Button, Welcome } from '@storybook/react/demo'
 // Lightning Design Components
 import '../include/slds'
 import FormLayout from '../components/FormLayout'
-import Heading from '../components/Heading'
 import Text from '../components/Text'
 
 storiesOf('Welcome', module).add('to Storybook', () => (
@@ -62,5 +61,3 @@ storiesOf('Text', module)
       The quick brown fox jumps over the lazy dog.
     </Text>
   ))
-
-storiesOf('Heading', module).add('large', () => <Heading value="Heading" />)
