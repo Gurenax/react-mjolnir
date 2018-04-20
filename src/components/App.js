@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 // import logo from '../assets/images/logo.svg'
 import '../styles/dist/App.css'
-import Heading from './Heading'
+import Text from './Text'
 import AbsoluteCenter from './AbsoluteCenter'
 
 class App extends Component {
@@ -10,7 +10,9 @@ class App extends Component {
       <div className="App">
         <React.StrictMode>
           <AbsoluteCenter>
-            <Heading value="React Mjolnir" />
+            <Text type="text" size="heading_large">
+              React Mjolnir
+            </Text>
           </AbsoluteCenter>
           <AbsoluteCenter>
             <div className="site-text-heading_label slds-m-top_none">
