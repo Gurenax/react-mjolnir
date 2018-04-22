@@ -23,7 +23,10 @@ storiesOf('Button', module)
     <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
   ))
 
-storiesOf('FormLayout', module).add('default', () => <FormLayout />)
+storiesOf('FormLayout', module)
+  .add('stacked', () => <FormLayout type="stacked"/>)
+  .add('horizontal', () => <FormLayout type="horizontal"/>)
+  .add('inline', () => <FormLayout type="inline"/>)
 
 storiesOf('Text', module)
   .add('Body Size Default', () => (

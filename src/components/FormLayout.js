@@ -1,8 +1,11 @@
 import React from 'react'
 
-const FormLayout = () => {
+const FormLayout = ({
+  type
+}) => {
+  const formClassName = 'slds-form slds-form_' + type
   return (
-    <div className="slds-form slds-form_stacked">
+    <div className={formClassName}>
       <div className="slds-form-element">
         <label className="slds-form-element__label" htmlFor="input-id-01">Text Input</label>
         <div className="slds-form-element__control">
