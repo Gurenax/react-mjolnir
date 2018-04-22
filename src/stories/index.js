@@ -61,3 +61,83 @@ storiesOf('Text', module)
       The quick brown fox jumps over the lazy dog.
     </Text>
   ))
+  .add('Long Form', () => (
+    <Text type="text" size="longform">
+      <p>The quick brown fox jumps over the lazy dog.</p>
+      <p>The quick brown fox jumps over the lazy dog.</p>
+      <Text type="heading_small">Heading</Text>
+      <ul>
+        <li>The quick brown fox jumps over the lazy dog.</li>
+        <li>The quick brown fox jumps over the lazy dog.
+          <ul>
+            <li>The quick brown fox jumps over the lazy dog.</li>
+            <li>The quick brown fox jumps over the lazy dog.
+              <ul>
+                <li>The quick brown fox jumps over the lazy dog.</li>
+                <li>The quick brown fox jumps over the lazy dog.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <Text type="heading_small">Heading</Text>
+      <ul>
+        <li>The quick brown fox jumps over the lazy dog.</li>
+        <li>The quick brown fox jumps over the lazy dog.
+          <ul>
+            <li>The quick brown fox jumps over the lazy dog.</li>
+            <li>The quick brown fox jumps over the lazy dog.
+              <ul>
+                <li>The quick brown fox jumps over the lazy dog.</li>
+                <li>The quick brown fox jumps over the lazy dog.</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </Text>
+  ))
+  .add('Align Left', () => (
+    <Text type="text" size="align_left">
+      The quick brown fox jumps over the lazy dog.
+    </Text>
+  ))
+  .add('Align Right', () => (
+    <Text type="text" size="align_right">
+      The quick brown fox jumps over the lazy dog.
+    </Text>
+  ))
+  .add('Align Center', () => (
+    <Text type="text" size="align_center">
+      The quick brown fox jumps over the lazy dog.
+    </Text>
+  ))
+  .add('Color Default', () => (
+    <Text type="text" size="color_default">
+      The quick brown fox jumps over the lazy dog.
+    </Text>
+  ))
+  .add('Color Weak', () => (
+    <Text type="text" size="color_weak">
+      The quick brown fox jumps over the lazy dog.
+    </Text>
+  ))
+  .add('Color Error', () => (
+    <Text type="text" size="color_error">
+      The quick brown fox jumps over the lazy dog.
+    </Text>
+  ))
+  .add('Color Inverse', () => (
+    <div style={{'background':'black'}}>
+      <Text type="text" size="color_inverse">
+        The quick brown fox jumps over the lazy dog.
+      </Text>
+    </div>
+  ))
+  .add('Color Inverse Weak', () => (
+    <div style={{'background':'black'}}>
+      <Text type="text" size="color_inverse-weak">
+        The quick brown fox jumps over the lazy dog.
+      </Text>
+    </div>
+  ))
