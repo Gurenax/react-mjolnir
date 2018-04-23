@@ -8,6 +8,7 @@ import { Button, Welcome } from '@storybook/react/demo'
 
 // Lightning Design Components
 import '../include/slds'
+import FormElement from '../components/FormElement'
 import FormLayout from '../components/FormLayout'
 import Text from '../components/Text'
 
@@ -21,6 +22,39 @@ storiesOf('Button', module)
   ))
   .add('with some emoji', () => (
     <Button onClick={action('clicked')}>😀 😎 👍 💯</Button>
+  ))
+
+storiesOf('FormElement', module)
+  .add('Input', () => (
+    <FormElement label="Input Label" forId="fe-01">
+      <input type="text" id="fe-01" class="slds-input" placeholder="Placeholder Text" />
+    </FormElement>
+  ))
+  .add('Textarea', () => (
+    <FormElement label="Textarea Label" forId="fe-02">
+      <textarea id="fe-02" class="slds-textarea" placeholder="Placeholder Text"></textarea>
+    </FormElement>
+  ))
+  .add('Checkbox', () => (
+    <FormElement label="Checkbox Label" forId="fe-03" singleCheckbox />
+  ))
+  .add('Radio Group', () => (
+    <FormElement label="Radio Group Label" groupControl="true">
+      <span class="slds-radio">
+        <input type="radio" id="radio-17" name="options" value="on" />
+        <label class="slds-radio__label" for="radio-17">
+          <span class="slds-radio_faux"></span>
+          <span class="slds-form-element__label">Radio Label One</span>
+        </label>
+      </span>
+      <span class="slds-radio">
+        <input type="radio" id="radio-18" name="options" value="on" />
+        <label class="slds-radio__label" for="radio-18">
+          <span class="slds-radio_faux"></span>
+          <span class="slds-form-element__label">Radio Label Two</span>
+        </label>
+      </span>
+    </FormElement>
   ))
 
 storiesOf('FormLayout', module)
