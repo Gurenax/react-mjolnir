@@ -56,6 +56,58 @@ storiesOf('FormElement', module)
       </span>
     </FormElement>
   ))
+  .add('Inline Help', () => (
+    <FormElement label="Input Label" forId="fe-10" inlineHelp="ex: (415)111-2222">
+      <input type="text" id="fe-10" class="slds-input" placeholder="Placeholder Text" />
+    </FormElement>
+  ))
+  .add('Inline Help for Checkbox', () => (
+    <FormElement label="Checkbox Label" forId="fe-03" singleCheckbox inlineHelp="ex: (415)111-2222"/>
+  ))
+  .add('Inline Help for Radio Group', () => (
+    <FormElement label="Radio Group Label" groupControl="true" inlineHelp="ex: (415)111-2222">
+      <span class="slds-radio">
+        <input type="radio" id="radio-17" name="options" value="on" />
+        <label class="slds-radio__label" for="radio-17">
+          <span class="slds-radio_faux"></span>
+          <span class="slds-form-element__label">Radio Label One</span>
+        </label>
+      </span>
+      <span class="slds-radio">
+        <input type="radio" id="radio-18" name="options" value="on" />
+        <label class="slds-radio__label" for="radio-18">
+          <span class="slds-radio_faux"></span>
+          <span class="slds-form-element__label">Radio Label Two</span>
+        </label>
+      </span>
+    </FormElement>
+  ))
+  .add('Tooltip Help', () => (
+    <FormElement label="Input Label" forId="fe-10" inlineHelp="ex: (415)111-2222" tooltip="Some helpful information">
+      <input type="text" id="fe-10" class="slds-input" placeholder="Placeholder Text" />
+    </FormElement>
+  ))
+  .add('Tooltip Help for Checkbox', () => (
+    <FormElement label="Checkbox Label" forId="fe-03" singleCheckbox inlineHelp="ex: (415)111-2222" tooltip="Some helpful information"/>
+  ))
+  .add('Tooltip Help for Radio Group', () => (
+    <FormElement label="Radio Group Label" groupControl="true" inlineHelp="ex: (415)111-2222" tooltip="Some helpful information">
+      <span class="slds-radio">
+        <input type="radio" id="radio-17" name="options" value="on" />
+        <label class="slds-radio__label" for="radio-17">
+          <span class="slds-radio_faux"></span>
+          <span class="slds-form-element__label">Radio Label One</span>
+        </label>
+      </span>
+      <span class="slds-radio">
+        <input type="radio" id="radio-18" name="options" value="on" />
+        <label class="slds-radio__label" for="radio-18">
+          <span class="slds-radio_faux"></span>
+          <span class="slds-form-element__label">Radio Label Two</span>
+        </label>
+      </span>
+    </FormElement>
+  ))
 
 storiesOf('FormLayout', module)
   .add('stacked', () => <FormLayout type="stacked"/>)
