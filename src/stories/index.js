@@ -4,13 +4,14 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { linkTo } from '@storybook/addon-links'
 
-import { Button, Welcome } from '@storybook/react/demo'
+import { Welcome } from '@storybook/react/demo'
 
 // Lightning Design Components
 import '../include/slds'
 import FormElement from '../components/FormElement'
 import FormLayout from '../components/FormLayout'
 import Text from '../components/Text'
+import Button from '../components/Button'
 
 storiesOf('Welcome', module).add('to Storybook', () => (
   <Welcome showApp={linkTo('Button')} />
